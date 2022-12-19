@@ -1,3 +1,0 @@
-<project default="main">
-	<emf.Ecore2Java model="psl/psl.ecore" genmodel="psl/psl.genmodel" modelProject="psl.model" modelProjectFragmentPath="src"/>
-</project>

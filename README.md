@@ -5,4 +5,4 @@ Docker container used to [generate EMF code from Ecore metamodels](https://downl
 - Build container
   - `docker image build -t eclipse-antrunner-docker:latest .`
 - Generate code from `workspace/psl/psl.ecore` 
-  - `docker run -v $PWD/workspace:/workspace eclipse-antrunner-docker:latest`
+  - `docker run -v $PWD/workspace:/workspace -v $PWD/buildfiles:/buildfiles -e buildfile='/buildfiles/build.xml' eclipse-antrunner-docker:latest`
